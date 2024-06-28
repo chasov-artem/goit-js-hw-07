@@ -32,13 +32,27 @@ background: #fff;
   justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  background: #f6f6fe;
 }
 
 .item h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+
+.item ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  height: 184px;
 }
