@@ -24,3 +24,23 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+
+const gallery = document.querySelector(".container");
+
+function createGallery(images) {
+  return images.map((image) => `<li>
+    <img src="${image.url}" alt="${image.alt}" width="360">
+  </li>`).join("")
+}
+
+const galleryMarkup = createGallery(images);
+
+console.log(galleryMarkup);
+
+gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+
+
+
+// Трохи поясню чому звертаюсь до контейнеру: галерея не давала змоги мені виставити паддінги.
+// Витратив купу часу граючись різними варіаціями, допомогло лише створення контейнеру всередині галереї.

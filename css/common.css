@@ -24,6 +24,8 @@ ol[class] {
   padding: 0;
 }
 
+
+
 body,
 h1,
 h2,
@@ -44,6 +46,11 @@ dd {
 ul[class],
 ol[class] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 #categories {
@@ -113,5 +120,26 @@ background: #fff;
   margin-bottom: 0;
 }
 
+/* ============================TASK-2=============================================== */
 
 
+.container {
+  padding: 100px 156px;
+  width: 1440px;
+  height: 848px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  padding: 100px 156px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.gallery li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
